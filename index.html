@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title id="docTitle">DESPRESSO STUDIO — Independent Games & Interactive Experiences</title>
+  <meta name="description" id="docDesc" content="DESPRESSO STUDIO is an independent game studio creating original games, interactive experiences, and creative digital projects.">
+  <meta name="theme-color" content="#0D0D0F">
+
+  <!-- Open Graph Meta -->
+  <meta property="og:title" id="ogTitle" content="DESPRESSO STUDIO — Independent Games, Made with Passion">
+  <meta property="og:description" id="ogDesc" content="Explore original indie games, free releases, and experimental interactive projects.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- SVG Symbol Defs -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="xmark" viewBox="0 0 40 40">
+      <path d="M4 4h9l7 10 7-10h9L25 20l11 16h-9l-7-10-7 10H4l11-16z" fill="currentColor"/>
+      <path d="M20 17l3 3-3 3-3-3z" fill="#0D0D0F"/>
+    </symbol>
+    <symbol id="coffee-icon" viewBox="0 0 24 24">
+      <path d="M18 8h1a4 4 0 0 1 0 8h-1M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8zM6 1v3M10 1v3M14 1v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </symbol>
+  </svg>
+
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Top Announcement Bar -->
+  <aside class="announcement-bar" id="announcementBar" role="region" aria-label="Announcement">
+    <div class="wrap ann-content">
+      <div class="ann-text" id="announcementText">
+        <span class="ann-badge">UPDATE</span>
+        <span id="annMsg">☕ New worlds are taking shape. Discover our latest indie projects and free game releases.</span>
+      </div>
+      <button class="ann-close" id="annClose" aria-label="Dismiss announcement">✕</button>
+    </div>
+  </aside>
+
+  <!-- Modern Header Navigation -->
+  <header class="nav" id="nav">
+    <a class="logo" href="#home" id="brandLogoLink" aria-label="DESPRESSO STUDIO home">
+      <div class="logo-mark" id="logoContainer">
+        <svg viewBox="0 0 24 24" width="26" height="26"><use href="#coffee-icon"/></svg>
+      </div>
+      <span id="brandNameText">DESPRESSO</span>
+    </a>
+
+    <nav id="menu" aria-label="Main Navigation">
+      <a href="#home" data-view="home" class="nav-link">Home</a>
+      <a href="#shop" data-view="shop" class="nav-link">Games</a>
+      <a href="#about" data-section="about" class="nav-link">About Us</a>
+      <a href="#contact" data-section="contact" class="nav-link">Contact Us</a>
+    </nav>
+
+    <div class="nav-end">
+      <!-- Mobile Hamburger -->
+      <button class="icon-btn burger" id="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="menu">
+        <span></span>
+        <span></span>
+      </button>
+
+      <!-- Discord Community -->
+      <a id="navDiscordBtn" class="nav-discord ext-discord-btn" href="https://discord.gg/dA4Eh8teJb" target="_blank" rel="noopener noreferrer" aria-label="Join our Discord community">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <path fill="currentColor" d="M19.54 5.15A19.79 19.79 0 0 0 14.68 3.6a.07.07 0 0 0-.07.04c-.21.37-.44.86-.6 1.25a18.3 18.3 0 0 0-5.02 0c-.16-.4-.4-.88-.61-1.25a.07.07 0 0 0-.07-.04A19.74 19.74 0 0 0 3.45 5.15a.06.06 0 0 0-.03.03C.33 9.78-.52 14.26-.1 18.69a.08.08 0 0 0 .03.06 19.94 19.94 0 0 0 5.97 3.01.07.07 0 0 0 .08-.03c.46-.63.87-1.3 1.22-2a.08.08 0 0 0-.04-.1 13.1 13.1 0 0 1-1.87-.9.08.08 0 0 1-.01-.13l.37-.29a.07.07 0 0 1 .08-.01c3.92 1.79 8.17 1.79 12.04 0a.07.07 0 0 1 .08.01l.37.29a.08.08 0 0 1-.01.13c-.6.35-1.23.65-1.88.9a.08.08 0 0 0-.04.1c.36.7.77 1.37 1.22 2a.07.07 0 0 0 .08.03 19.88 19.88 0 0 0 5.98-3.01.08.08 0 0 0 .03-.06c.5-5.12-.84-9.56-3.35-13.51a.06.06 0 0 0-.03-.03ZM8.02 15.27c-1.18 0-2.15-1.08-2.15-2.4s.95-2.4 2.15-2.4c1.21 0 2.18 1.09 2.16 2.4 0 1.32-.96 2.4-2.16 2.4Zm7.96 0c-1.18 0-2.15-1.08-2.15-2.4s.95-2.4 2.15-2.4c1.21 0 2.18 1.09 2.16 2.4 0 1.32-.95 2.4-2.16 2.4Z"/>
+        </svg>
+        <span>DISCORD</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- VIEW: HOME -->
+    <section class="view" id="view-home" data-view="home">
+      <!-- Hero Section -->
+      <div class="hero">
+        <div class="grid-bg" aria-hidden="true"></div>
+        <div class="streaks" aria-hidden="true"><i></i><i></i><i></i></div>
+        <div class="ambient-glow" aria-hidden="true"></div>
+
+        <!-- 3D Stage / CSS Fallback -->
+        <canvas id="stage" aria-hidden="true"></canvas>
+        <div class="x-css" id="xcss" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><use href="#coffee-icon"/></svg>
+        </div>
+
+        <div class="hero-copy">
+          <div class="status-wrap">
+            <p class="status" id="heroStatusBadge">
+              <span class="dot" id="heroStatusDot"></span>
+              <span id="heroStatusText">INDEPENDENT GAME STUDIO</span>
+            </p>
+            <div class="visitor-counter-badge" id="heroVisitorBadge" title="Real-Time Unique Visitors">
+              <span class="v-live-dot"></span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="v-icon">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+              </svg>
+              <span class="v-label">DEVS &amp; GAMERS:</span>
+              <span class="v-val" id="heroVisitorCount">0</span>
+            </div>
+          </div>
+
+          <h1 class="mega" aria-label="DESPRESSO" id="heroMegaTitle">
+            <span>D</span><span>E</span><span>S</span><span>P</span><span>R</span><span>E</span><span>S</span><span>S</span><span class="rx">O</span>
+          </h1>
+
+          <p class="tag" id="heroTagline">INDEPENDENT GAMES. DISTINCT WORLDS.</p>
+          <p class="sub" id="heroSubtext">Fueled by creativity and late-night ideas. We create original indie games, immersive interactive experiences, and worlds worth getting lost in.</p>
+
+          <div class="row hero-actions">
+            <a class="btn magnet primary-glow" href="#shop">
+              <span>EXPLORE OUR GAMES</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <button class="scroll-ind" id="scrollInd" aria-label="Scroll to About">
+          <i></i>
+        </button>
+      </div>
+
+      <!-- Live Counters Bar -->
+      <section class="stats-bar" aria-label="Key Metrics">
+        <div class="wrap">
+          <div class="stats-counter-grid" id="publicStatsGrid">
+            <div class="counter-box visitor-counter-highlight">
+              <div class="counter-head-row">
+                <span class="c-val" id="statVisitorVal">0</span>
+                <span class="live-pill"><i class="live-dot-mini"></i> REALTIME</span>
+              </div>
+              <span class="c-label">Global Unique Visitors</span>
+            </div>
+            <div class="counter-box">
+              <span class="c-val" id="statVal0">12,500+</span>
+              <span class="c-label" id="statLbl0">Active Players</span>
+            </div>
+            <div class="counter-box">
+              <span class="c-val" id="statVal1">35,000+</span>
+              <span class="c-label" id="statLbl1">Game Downloads</span>
+            </div>
+            <div class="counter-box">
+              <span class="c-val" id="statVal2">2,800+</span>
+              <span class="c-label" id="statLbl2">Discord Devs</span>
+            </div>
+            <div class="counter-box">
+              <span class="c-val" id="statVal3">Indie Studio</span>
+              <span class="c-label" id="statLbl3">Independent by Design</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="sec about" id="about">
+        <div class="wrap split">
+          <div class="reveal">
+            <span class="section-tag">STUDIO MANIFESTO</span>
+            <h2 id="aboutTitle">WHO WE ARE</h2>
+            <p class="lead" id="aboutLead">DESPRESSO STUDIO is an independent game studio creating atmospheric, player-driven experiences. We focus on original ideas, distinctive worlds, and games worth getting lost in. Built by indie developers, for players who love indie games.</p>
+            
+            <ul class="hl" id="aboutHighlightsList">
+              <li><b>ORIGINAL INDIE EXPERIENCES</b></li>
+              <li><b>PLAYER-FOCUSED GAME DESIGN</b></li>
+              <li><b>COMMUNITY-DRIVEN PLAYTESTS</b></li>
+            </ul>
+          </div>
+
+          <div class="emblem reveal" aria-hidden="true">
+            <div class="ring r1"></div>
+            <div class="ring r2"></div>
+            <div class="ring r3"></div>
+            <svg viewBox="0 0 24 24"><use href="#coffee-icon"/></svg>
+          </div>
+        </div>
+      </section>
+
+      <!-- Tech Grid -->
+      <section class="sec features-sec">
+        <div class="wrap">
+          <div class="center reveal">
+            <span class="section-tag">OUR CREATIVE PROCESS</span>
+            <h2>WORLDS MADE TO BE PLAYED</h2>
+            <p class="lead">Original ideas, thoughtful design, and memorable player experiences.</p>
+          </div>
+
+          <div class="features-grid">
+            <div class="f-card reveal">
+              <div class="f-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+              </div>
+              <h3>Original Game Development</h3>
+              <p>Built around original ideas, thoughtful mechanics, and carefully crafted player experiences.</p>
+            </div>
+
+            <div class="f-card reveal">
+              <div class="f-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <h3>Gameplay &amp; Visual Design</h3>
+              <p>Distinct visual identities, responsive controls, and gameplay systems designed to feel great.</p>
+            </div>
+
+            <div class="f-card reveal">
+              <div class="f-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <h3>Player-First Experiences</h3>
+              <p>Every project is shaped around its own ideas, audience, and the most natural way to experience it.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="sec community" id="contact">
+        <div class="wrap center reveal">
+          <span class="section-tag">CONTACT &amp; COMMUNITY</span>
+          <h2>LET'S CONNECT</h2>
+          <p class="lead">Have a question, want to collaborate, or need support? Reach out through Discord or follow our development updates on YouTube.</p>
+          <div class="row c">
+            <a class="btn magnet ext-discord-btn" href="https://discord.gg/dA4Eh8teJb" target="_blank" rel="noopener noreferrer">
+              <span>CONTACT US ON DISCORD</span>
+            </a>
+            <a class="btn ghost magnet ext-yt-btn" href="https://www.youtube.com/@Despresso.Gaming" target="_blank" rel="noopener noreferrer">
+              <span>WATCH DEVLOGS</span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- VIEW: STORE -->
+    <section class="view" id="view-shop" data-view="shop" hidden>
+      <div class="page wrap">
+        <p class="status" id="shopStatusBanner">
+          <span class="dot amber"></span>
+          <span id="shopStatusText">GAMES IN DEVELOPMENT</span>
+        </p>
+
+        <h1>OUR GAMES &amp; PROJECTS</h1>
+        <p class="sub">Discover our original indie games and experimental interactive projects. Every public release is free to play.</p>
+
+        <div class="catalog-toolbar">
+          <div class="cat-search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="shopFilterInput" placeholder="Search games &amp; projects...">
+          </div>
+          <div class="cat-pills" id="shopCategoryPills">
+            <button class="cat-pill active" data-cat="all">All</button>
+            <button class="cat-pill" data-cat="strategy">Strategy</button>
+            <button class="cat-pill" data-cat="arcade">Arcade</button>
+            <button class="cat-pill" data-cat="experimental">Experimental</button>
+          </div>
+        </div>
+
+        <div id="products" class="products"></div>
+
+        <div class="vault" id="shopEmpty" hidden>
+          <div class="crate" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="60" height="60"><use href="#coffee-icon"/></svg>
+            <div class="bar"><i></i></div>
+          </div>
+          <h2>NEW GAMES &amp; BUILDS ARE ON THE WAY.</h2>
+          <p>We are putting the finishing touches on our next indie releases. Check back soon or join our Discord for announcements and early previews.</p>
+          <div class="row c">
+            <a class="btn" href="#home">BACK TO HOME</a>
+            <a class="btn ghost ext-discord-btn" href="https://discord.gg/dA4Eh8teJb" target="_blank" rel="noopener noreferrer">JOIN DISCORD</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW: DOWNLOAD -->
+    <section class="view" id="view-download" data-view="download" hidden>
+      <div class="page wrap">
+        <p class="status" id="dlStatusBanner">
+          <span class="dot amber"></span>
+          <span id="dlStatusText">FREE BUILDS &amp; DEMOS</span>
+        </p>
+
+        <h1>FREE RELEASES &amp; DOWNLOADS</h1>
+        <p class="sub">Get our latest free game builds, demos, and experimental releases.</p>
+
+        <div class="catalog-toolbar">
+          <div class="cat-search-box">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+            <input type="text" id="dlFilterInput" placeholder="Search free games and releases...">
+          </div>
+          <div class="cat-pills" id="dlCategoryPills">
+            <button class="cat-pill active" data-cat="all">All Releases</button>
+            <button class="cat-pill" data-cat="games">Games</button>
+            <button class="cat-pill" data-cat="demos">Demos</button>
+            <button class="cat-pill" data-cat="experimental">Experiments</button>
+          </div>
+        </div>
+
+        <div id="files" class="files-grid"></div>
+
+        <div class="vault" id="dlEmpty" hidden>
+          <div class="dl-art" aria-hidden="true">
+            <svg viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="10" y="10" width="100" height="100" rx="6" opacity=".3"/>
+              <path d="M60 24v50m0 0L40 54m20 20l20-20M32 92h56"/>
+            </svg>
+            <span class="scan"></span>
+          </div>
+          <h2>NEW BUILDS ARE IN DEVELOPMENT.</h2>
+          <p>We are preparing the next batch of free game releases. Follow our community channels for announcements and new builds.</p>
+          <div class="row c">
+            <button class="btn" disabled>PREPARING PACKAGES</button>
+            <a class="btn ghost ext-discord-btn" href="https://discord.gg/dA4Eh8teJb" target="_blank" rel="noopener noreferrer">DISCORD COMMUNITY</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIEW: BETA KEY -->
+    <section class="view" id="view-key" data-view="key" hidden>
+      <div class="page wrap">
+        <div class="status-wrap">
+          <p class="status">
+            <span class="dot"></span>
+            <span id="keyPoolStatus">BETA KEY DISPENSER ONLINE</span>
+          </p>
+        </div>
+
+        <h1>CLAIM YOUR CLOSED BETA KEY</h1>
+        <p class="sub">Get early playtester access to private builds and confidential test releases.</p>
+
+        <div class="key-steps-grid">
+          <div class="key-step-card">
+            <div class="k-num">01</div>
+            <h4>Request Token</h4>
+            <p>Initiate a unique playtester session to claim your one-time verification token.</p>
+          </div>
+          <div class="key-step-card">
+            <div class="k-num">02</div>
+            <h4>Pass Verification</h4>
+            <p>Complete the quick tester validation without closing the generated browser tab.</p>
+          </div>
+          <div class="key-step-card">
+            <div class="k-num">03</div>
+            <h4>Activate Build</h4>
+            <p>Copy your unique playtest key and redeem it inside the game client or on Discord.</p>
+          </div>
+        </div>
+
+        <div class="vault key-vault-box">
+          <div class="key-art" aria-hidden="true">
+            <svg viewBox="0 0 160 70" fill="none" stroke="currentColor" stroke-width="3">
+              <circle cx="35" cy="35" r="22"/>
+              <circle cx="35" cy="35" r="7"/>
+              <path d="M57 35h92M120 35v16M138 35v12"/>
+            </svg>
+          </div>
+
+          <h2>CLAIM YOUR INSTANT BETA ACCESS CODE.</h2>
+          <p>Click CLAIM KEY to generate your exclusive playtester key. Each key is single-use and granted directly to community testers.</p>
+
+          <div class="row c">
+            <button class="btn primary-glow lg" id="getKey">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 2l-2 2m-7.61 7.61a5.5 5.5 0 1 1-7.778 7.778 5.5 5.5 0 0 1 7.777-7.777zm0 0L15.5 7.5m0 0l3 3L22 7l-3-3m-3.5 3.5L19 4"/></svg>
+              <span>CLAIM KEY</span>
+            </button>
+          </div>
+
+          <p class="note" id="keyMsg" role="status"></p>
+
+          <div class="copybox">
+            <input id="inviteUrl" readonly value="https://discord.gg/dA4Eh8teJb" aria-label="Discord invite URL">
+            <button class="btn sm ghost" id="copyInvite">COPY DISCORD LINK</button>
+          </div>
+
+          <p class="muted sm" style="margin-top: 24px;">
+            Encountered an issue or need direct support? 
+            <a href="https://discord.gg/dA4Eh8teJb" target="_blank" rel="noopener noreferrer" class="link-inline ext-discord-btn">Open a ticket in our Discord community</a>.
+          </p>
+        </div>
+
+        <div class="faq-accordion-wrap">
+          <h3 class="faq-head">Frequently Asked Questions</h3>
+          
+          <details class="faq-item">
+            <summary>How do I redeem my beta key?</summary>
+            <p>Once you reveal your key, copy it and paste it into the launcher prompt or enter it in the #beta-verification channel on Discord.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Are your games free to download?</summary>
+            <p>Yes. Our public game releases are free to download and play. Any special testing or early-access requirements will be clearly announced.</p>
+          </details>
+
+          <details class="faq-item">
+            <summary>Where can I share feedback or report bugs?</summary>
+            <p>Join our Discord server and post in the #game-feedback or #bug-reports channels so our development team can iterate quickly.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Modern Footer -->
+  <footer class="foot">
+    <div class="divider" aria-hidden="true"></div>
+    <div class="wrap fgrid">
+      <div>
+        <a class="logo" href="#home">
+          <div class="logo-mark"><svg viewBox="0 0 24 24" width="24" height="24"><use href="#coffee-icon"/></svg></div>
+          <span id="footBrandName">DESPRESSO</span>
+        </a>
+        <p class="muted" id="footBrandDesc">An independent game studio creating original games, immersive experiences, and experimental digital projects.</p>
+      </div>
+
+      <nav aria-label="Footer Navigation">
+        <h4 class="foot-col-title">Navigation</h4>
+        <a href="#home">Home</a>
+        <a href="#shop">Games</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact Us</a>
+      </nav>
+
+      <nav aria-label="Community & Social">
+        <h4 class="foot-col-title">Community</h4>
+        <a href="https://discord.gg/dA4Eh8teJb" target="_blank" rel="noopener noreferrer" class="ext-discord-btn">Discord Server</a>
+        <a href="https://www.youtube.com/@Despresso.Gaming" target="_blank" rel="noopener noreferrer" class="ext-yt-btn">YouTube Devlogs</a>
+        <a href="/admin" target="_blank" class="admin-quick-link">Admin Portal</a>
+      </nav>
+    </div>
+    <p class="copy" id="copyrightText">© 2026 DESPRESSO STUDIO. All Rights Reserved. Created independently, powered by imagination.</p>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button class="totop" id="toTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 15l6-6 6 6"/></svg>
+  </button>
+
+  <div class="scrim" id="scrim" hidden></div>
+
+  <!-- Game Details Modal -->
+  <div class="modal-wrap" id="quickViewModal" hidden>
+    <div class="modal quick-view-box" role="dialog" aria-modal="true" aria-labelledby="qvTitle" tabindex="-1">
+      <div class="qv-header">
+        <span class="qv-badge" id="qvBadge">FREE RELEASE</span>
+        <button class="icon-btn" id="qvClose" aria-label="Close details">✕</button>
+      </div>
+      <div class="qv-content">
+        <div class="qv-img-box">
+          <img id="qvImage" src="assets/product-vip.svg" alt="Game preview">
+        </div>
+        <div class="qv-info">
+          <span class="qv-cat" id="qvCategory">Indie Game</span>
+          <h2 id="qvTitle">Product Title</h2>
+          <div class="qv-free" id="qvFree">FREE TO PLAY</div>
+          <p class="qv-desc" id="qvDesc"></p>
+          <div class="qv-features">
+            <h4>GAME FEATURES:</h4>
+            <ul id="qvFeaturesList"></ul>
+          </div>
+          <div class="qv-actions">
+            <div class="qv-project-actions" id="qvProjectActions"></div>
+            <a class="btn ghost ext-discord-btn" href="https://discord.gg/dA4Eh8teJb" target="_blank" rel="noopener noreferrer">JOIN THE COMMUNITY</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toasts" id="toasts" role="status" aria-live="polite"></div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+  <script src="script.js" defer></script>
+</body>
+</html>
