@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- خلفية داكنة خفيفة تبرز الأيقونة في التابات الفاتحة والداكنة -->
+  <rect width="32" height="32" rx="7" fill="#111113" />
+
+  <!-- خطوط البخار المتصاعدة -->
+  <path d="M11.5 5C11.5 7 13.5 8 13.5 10" stroke="#FF5E2B" stroke-width="1.8" stroke-linecap="round" />
+  <path d="M16 3.5C16 6 18.5 7 18.5 9.5" stroke="#FF5E2B" stroke-width="1.8" stroke-linecap="round" />
+  <path d="M20.5 5C20.5 7 22.5 8 22.5 10" stroke="#FF5E2B" stroke-width="1.8" stroke-linecap="round" />
+
+  <!-- جسم الفنجان -->
+  <path d="M7 13H23C23 18.5 19.5 22.5 15 22.5C10.5 22.5 7 18.5 7 13Z" fill="url(#coffee_grad)" />
+
+  <!-- يد الفنجان -->
+  <path d="M22 14.5H24C25.38 14.5 26.5 15.62 26.5 17C26.5 18.38 25.38 19.5 24 19.5H21" stroke="#FF5E2B" stroke-width="1.8" stroke-linecap="round" />
+
+  <!-- قاعدة الفنجان -->
+  <path d="M11 25.5H19" stroke="#FF5E2B" stroke-width="1.8" stroke-linecap="round" />
+
+  <!-- التدرج اللوني البرتقالي للهوية -->
+  <defs>
+    <linearGradient id="coffee_grad" x1="7" y1="13" x2="23" y2="22.5" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF6B35" />
+      <stop offset="1" stop-color="#E84A15" />
+    </linearGradient>
+  </defs>
+</svg>
